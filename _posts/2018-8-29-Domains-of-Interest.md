@@ -1,3 +1,8 @@
+---
+layout: post
+title: Thesis: Domains of Interest
+---
+
 # Thesis Studio I - Assignment
 Look at the work you have created in the past, and/or think about the work you want to create in the future. Break the works down into categories of interest. Try to place the works into 4-6 areas or domains. Write down these domains. For each domain write a short description in terms both broad and focused. Be creative, don't limit yourself to traditional approaches. It is important to be mindful of the open and networked nature of this work. This is to allow others to get a sense of both the knowledge domain and your focus. We will use these as the jumping off point for our exercises on Thursday.
 - - - -
