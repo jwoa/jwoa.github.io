@@ -69,6 +69,10 @@ p {
   margin: 15px 0;
 }
 
+p::selection {
+    background-color: #F1C40F;
+}
+
 a {
   color: $blue;
   text-decoration: none;
@@ -151,6 +155,7 @@ img {
 
 #home_page {
     position: relative;
+    width: 100%;
 }
 
 .slogan {
