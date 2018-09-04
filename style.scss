@@ -203,6 +203,7 @@ img {
     font-weight: 300;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
 }
 
 .resume_h5 {
@@ -360,7 +361,6 @@ nav {
 footer {
   margin-top: 50px;
   padding: 20px 0;
-  border-top: 1px solid #ddd;
   text-align: center;
   color: #EEE;
   font-size: 15px;
@@ -369,6 +369,21 @@ footer {
 .fa-heart {
     color: #FB4248;
     opacity: 0.5;
+}
+
+.fa-instagram {
+    color: #000;
+    padding-right: 10px;
+}
+
+.fa-twitter {
+    color: #000;
+    padding-right: 10px;
+}
+
+.fa-linkedin {
+    color: #000;
+    padding-right: 10px;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
