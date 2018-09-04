@@ -353,20 +353,22 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
   width: 80%;
   margin: auto;
 }
 
 footer {
+  margin-top: 50px;
   padding: 20px 0;
+  border-top: 1px solid #ddd;
   text-align: center;
   color: #EEE;
+  font-size: 15px;
 }
 
 .fa-heart {
     color: #FB4248;
+    opacity: 0.5;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
