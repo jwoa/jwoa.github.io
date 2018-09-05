@@ -442,6 +442,7 @@ footer {
 @media only screen and (max-width: 600px) {
     .resume_date {
         display: block;
+        float: none;
     }
     .download {
         display: none;
