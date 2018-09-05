@@ -419,6 +419,9 @@ footer {
 }
 
 @media only screen and (max-width: 640px) {
+    .slogan {
+        font-size: 23px;
+    }
     #photo {
         width: 100%;
     }
@@ -454,6 +457,8 @@ footer {
         font-family: 'Lato', sans-serif;
         text-decoration: underline;
         display: block;
+        font-size: 14px;
+        color: #000;
     }
 }
 
