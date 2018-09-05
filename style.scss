@@ -200,7 +200,7 @@ img {
 // RESUME PAGE LAYOUT
 
 .resume_h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -226,6 +226,10 @@ img {
 .resume_desc {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
+}
+
+.contact {
+    display: inline;
 }
 
 .download {
