@@ -261,6 +261,20 @@ span.ti-container::selection {
     display: none;
 }
 
+/* RESUME PAGE */
+#projects {
+    margin: 0 auto;
+}
+.item {
+    width: 31%;
+    display: inline-block;
+    margin: 9px;
+}
+
+.item.item1 {
+/*    padding-left: 0;*/
+}
+
 //
 // .masthead
 //
@@ -474,12 +488,22 @@ footer {
         font-size: 14px;
         color: #000;
     }
+    .item {
+        display: block;
+        width: 90vw;
+        padding: 1vw;
+/*        margin: 0 auto;*/
+    }
 }
 
 @media only screen and (max-width: 530px) {
     .slogan {
         font-size: 17px;
     }
+    .item {
+        margin-left: 0px !important;
+    }
+
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
