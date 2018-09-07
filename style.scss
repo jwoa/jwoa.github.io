@@ -207,6 +207,10 @@ span.ti-container::selection {
     color: #333333;
 }
 
+.title_heavy::selection {
+    background-color: yellow;
+}
+
 // RESUME PAGE LAYOUT
 
 .resume_h3 {
