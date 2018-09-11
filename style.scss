@@ -79,7 +79,8 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: $darkgray;
+    text-decoration: underline;
   }
 }
 
@@ -361,6 +362,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
+    text-transform: uppercase;
 
     @include mobile {
       margin: 0 10px;
