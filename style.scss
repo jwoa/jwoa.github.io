@@ -79,7 +79,7 @@ a {
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $darkgray;
+    color: $darkGray;
   }
 }
 
@@ -363,6 +363,10 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
+      &:hover, &:active {
+        color: $darkGray;
+        text-decoration: underline;  
+      }
 
     @include mobile {
       margin: 0 10px;
@@ -372,10 +376,10 @@ nav {
   }
 }
 
-nav a:hover, a:active {
-    color: $darkgray;
-    text-decoration: underline;
-}
+//nav a:hover, a:active {
+//    color: $darkGray;
+//    text-decoration: underline;
+//}
 
 //
 // .main
