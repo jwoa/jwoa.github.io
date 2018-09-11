@@ -362,10 +362,6 @@ nav {
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
-    &:hover, &:active {
-        color: $darkgray;
-        text-decoration: underline;
-    }
 
     @include mobile {
       margin: 0 10px;
@@ -373,6 +369,11 @@ nav {
     }
     
   }
+}
+
+nav a:hover, a:active {
+    color: $darkgray;
+    text-decoration: underline;
 }
 
 //
