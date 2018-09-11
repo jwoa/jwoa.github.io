@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6 {
   color: $darkerGray;
   font-weight: bold;
 
-  line-height: 1.7;
+  line-height: 1;
   margin: 1em 0 15px;
   padding: 0;
 
@@ -219,17 +219,19 @@ span.ti-container::selection {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
+    margin-top: 50px;
 }
 
 .resume_h5 {
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 40px;
 }
 
 .resume_h6 {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 300;
     font-family: 'Montserrat', sans-serif; 
 }
 
