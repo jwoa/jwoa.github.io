@@ -267,9 +267,10 @@ span.ti-container::selection {
 /* RESUME PAGE */
 #projects {
     margin: 0 auto;
+    text-align: center;
 }
 .item {
-    width: 31%;
+    width: 30%;
     display: inline-block;
     margin: 9px;
 }
@@ -347,7 +348,7 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-  text-transform: uppercase;
+//  text-transform: uppercase;
 
   @include mobile {
     float: none;
@@ -362,7 +363,7 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-    text-transform: uppercase;
+//    text-transform: uppercase;
       &:hover, &:active {
         color: $darkGray;
         text-decoration: underline;  
