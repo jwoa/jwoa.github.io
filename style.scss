@@ -264,16 +264,43 @@ span.ti-container::selection {
     display: none;
 }
 
-/* RESUME PAGE */
+/* PROJECTS PAGE */
 #projects {
     margin: 0 auto;
     text-align: center;
 }
+
 .item {
     width: 30%;
     display: inline-block;
     margin: 9px;
 }
+
+/* INDIVIDUAL PROJECTS PAGE */
+
+#projects p {
+    text-align: left;
+}
+
+#portfolio_wrapper {
+    height: auto;
+    width: 100%;
+    display: inline-block;
+}
+
+#left_project {
+    width: 50%;
+    float: left;
+    clear: both;
+    display: inline;
+}
+
+#right_project {
+    width: 50%;
+    float: right;
+}
+
+/* END INDIVIDUAL PROJECTS PAGE */
 
 .item.item1 {
 /*    padding-left: 0;*/
