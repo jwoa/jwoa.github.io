@@ -491,6 +491,18 @@ footer {
     .slogan {
         font-size: 27px;
     }
+    
+    .item {
+        width: 46%;
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    .item {
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 25px;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -537,9 +549,7 @@ footer {
     }
     .item {
         display: block;
-        width: 90vw;
         padding: 1vw;
-/*        margin: 0 auto;*/
     }
 }
 
