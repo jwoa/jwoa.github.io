@@ -328,16 +328,17 @@ span.ti-container::selection {
 }
 
 .site-avatar {
-  float: left;
+  float: none;
   width: 70px;
   height: 70px;
   margin-right: 15px;
 
   @include mobile {
-    float: left;
+    float: none;
     display: block;
     margin: 0 auto;
     height: 50px;
+    width: 50px;
   }
 
   img {
