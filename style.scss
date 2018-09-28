@@ -384,8 +384,8 @@ nav {
 //  text-transform: uppercase;
 
   @include mobile {
-    float: right;
-    margin-top: 9px;
+    float: none;
+    margin-top: 20px;
     display: block;
     font-size: 16px;
   }
