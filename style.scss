@@ -309,6 +309,18 @@ span.ti-container::selection {
 
 /* OASIS */
 
+#left_project_oasis {
+    width: 50%;
+    float: left;
+    clear: both;
+    display: inline;
+}
+
+#right_project_oasis {
+    width: 50%;
+    float: right;
+}
+
 #oasis_logo {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -519,6 +531,18 @@ footer {
     
     .item {
         width: 46%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .oasis_logo {
+        width: 100%;
+    }
+    #left_project_oasis {
+        width: 100%;
+    }
+    #right_project_oasis {
+        width: 100%;
     }
 }
 
