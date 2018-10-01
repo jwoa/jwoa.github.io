@@ -304,6 +304,19 @@ span.ti-container::selection {
     float: right;
 }
 
+.project_sketch {
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.project_img {
+    border: 1px solid #ededed;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 /* END INDIVIDUAL PROJECTS PAGE */
 
 
@@ -339,21 +352,16 @@ span.ti-container::selection {
     border: 1px solid #ededed;
 }
 
-.project_sketch {
-    width: 90%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.project_img {
-    border: 1px solid #ededed;
-    width: 90%;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-
 /* END OASIS */
+
+/* GLITCH */
+
+#portfolio_wrapper_religion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* GLITCH END */
 
 .item.item1 {
 /*    padding-left: 0;*/
