@@ -660,7 +660,7 @@ footer {
 //###
 
 $dark-color: #111;
-$light-color: #eee;
+$light-color: #fff;
 
 body.dark-mode {
   background-color: $dark-color;
@@ -669,8 +669,8 @@ body.dark-mode {
     color: $dark-color;
   }
   button {
-    background-color: $light-color;
-    color: $dark-color;
+//    background-color: $light-color;
+//    color: $dark-color;
   }
 }
 
@@ -681,7 +681,7 @@ body.light-mode {
     color: $dark-color;
   }
   button {
-    background-color: $dark-color;
-    color: $light-color;
+//    background-color: $dark-color;
+//    color: $light-color;
   }
 }
