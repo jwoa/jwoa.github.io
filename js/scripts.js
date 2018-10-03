@@ -30,10 +30,31 @@
 //
 //}
 
+//window.onload = function() {
+//   if (sessionStorage.getItem('mode')) {
+//        document.body.style.backgroundColor = sessionStorage.getItem('colour');
+//    } else {
+//        document.body.style.backgroundColor =  "#BB0A21";
+//        sessionStorage.setItem('colour', "#BB0A21");
+//    };
+//};
+
 window.onload = function() {
-    function darker() {
-      var body = document.getElementById("body");
-      var currentClass = body.className;
-      body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+    
+    let currentMode = document.getElementById('mode');
+    
+    function sickoMode() {
+        if (localStorage.getItem('currentMode').style.backgroundColor == "#FFFFFF") {
+            night();
+        } else if () {
+            day();       
+        };
+        function night() {
+            currentMode.style.backgroundColor = '#000';
+        };
+        function day() {
+            console.log("Day");
+        };
     };
+       
 };

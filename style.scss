@@ -27,7 +27,7 @@ html {
 body {
 //	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+//  color: $darkGray;
 }
 
 .container {
@@ -663,29 +663,6 @@ footer {
 // SICKO MODE
 // ###
 
-$dark-color: #111;
-$light-color: #eee;
-
-body.dark-mode {
-  background-color: $dark-color;
-  color: $light-color;
-  a {
-    color: $dark-color;
-  }
-  button {
-    background-color: $light-color;
-    color: $dark-color;
-  }
-}
-
-body.light-mode {
-  background-color: $light-color;
-  color: $dark-color;
-  a {
-    color: $dark-color;
-  }
-  button {
-    background-color: $dark-color;
-    color: $light-color;
-  }
+#mode {
+   background-color: #FFFFFF; 
 }

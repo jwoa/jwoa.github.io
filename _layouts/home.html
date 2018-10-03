@@ -25,7 +25,7 @@
     
   </head>
 
-  <body>
+  <body id="mode">
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -35,8 +35,9 @@
             <a href="{{ site.baseurl }}/">Home</a>
             <a href="{{ site.baseurl }}/resume">Resume</a>
             <a href="{{ site.baseurl }}/projects">Projects</a>
-            <a href="{{ site.baseurl }}/blog">Blog | </a>
-            <button type="button" name="dark_light" onclick="darker()" title="SICKO MODE">SICKO MODE</button>
+            <a href="{{ site.baseurl }}/blog">Blog|</a>
+            <span> | </span>
+            <button onclick="sickoMode()" title="SICKO MODE">SICKO MODE</button>
           </nav>
         </header>
       </div>
