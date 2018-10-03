@@ -16,10 +16,6 @@
 /* BASE RULES */
 /**************/
 
-bg {
-    background-color: 'rgb(255, 255, 255)';
-}
-
 html {
   font-size: 100%;
 }
@@ -27,7 +23,7 @@ html {
 body {
 //	background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+//  color: $darkGray;
 }
 
 .container {
