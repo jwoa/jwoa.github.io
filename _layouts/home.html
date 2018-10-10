@@ -14,8 +14,6 @@
     <script src="https://use.fontawesome.com/384072207c.js"></script>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-    
-<!--    <script type="text/javascript" src="{{ site.baseurl }}/js/scripts.js"></script>-->
       
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -27,19 +25,28 @@
     
   </head>
 
-  <body id="body" class="light-mode">
+<!--  <body id="body" class="light-mode">-->
+      <body >
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+<!--          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/logo_white.png" id="logo_white" /></a>
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/logo.png" id="logo" /></a>
 
           <nav>
             <a href="{{ site.baseurl }}/">Home</a>
             <a href="{{ site.baseurl }}/resume">Resume</a>
             <a href="{{ site.baseurl }}/projects">Projects</a>
             <a href="{{ site.baseurl }}/blog">Blog</a>
-<!--            <span> | </span>-->
-<!--            <button type="button" name="dark_light" onclick="sickoMode()" title="Toggle dark/light mode">⚡</button>-->
+            <span> | </span>
+              
+            <label class="switch">
+                <input type="checkbox">
+<!--                <span class="slider round" id="theme" onclick="sickoMode()"></span>-->
+                <span class="slider round" id="theme"></span>
+            </label>
+              
           </nav>
         </header>
       </div>
@@ -58,14 +65,17 @@
       
     {% include analytics.html %}
 <script>
-    console.log("Booted.");
+    
+document.getElementById('theme').addEventListener('click', function() {
+   let sickoModeOn = document.body.classList.toggle('dark-mode');
+   localStorage.setItem('dark-mode-on', sickoModeOn);
+});
 
-    function sickoMode() {
-        var body = document.getElementById("body");
-        var currentClass = body.className;
-        body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-    }
-    console.log("Ended.");
+if (JSON.parse(localStorage.getItem('dark-mode-on'))) {
+    document.body.classList.add('dark-mode');
+}
+
+
 </script>
   </body>
 </html>

@@ -24,6 +24,7 @@ body {
 //	background: $white;
   font: 18px/1.4 $helvetica;
 //  color: $darkGray;
+    transition: all 0.30s ease-out;
 }
 
 .container {
@@ -162,8 +163,8 @@ img {
 }
 
 .slogan {
-//    padding: 40px;
-    padding-bottom: 30px;
+    margin: 50px;
+    margin-bottom: 100px;
     font-family: 'Slabo 27px', serif;
     line-height: 50px;
     font-size: 38px;
@@ -192,7 +193,8 @@ span.ti-container::selection {
 }
 
 #photo img {
-    width: 80%;
+    width: 70%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #intro {
@@ -232,7 +234,7 @@ span.ti-container::selection {
 .resume_h6 {
     font-size: 16px;
     font-weight: 300;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 .resume_date {
@@ -278,6 +280,10 @@ span.ti-container::selection {
 
 /* INDIVIDUAL PROJECTS PAGE */
 
+.project_section {
+    margin-top: 5%;
+}
+
 #projects h3 {
     text-align: left;
 }
@@ -308,6 +314,7 @@ span.ti-container::selection {
     width: 90%;
     margin-bottom: 10px;
     margin-top: 10px;
+    box-shadow: $shadow;
 }
 
 .project_img {
@@ -315,6 +322,14 @@ span.ti-container::selection {
     width: 90%;
     margin-bottom: 10px;
     margin-top: 10px;
+    box-shadow: $shadow;
+}
+
+video {
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #ededed;
+    box-shadow: $shadow;
 }
 
 /* END INDIVIDUAL PROJECTS PAGE */
@@ -329,9 +344,25 @@ span.ti-container::selection {
     display: inline;
 }
 
+#left_project_oasis img {
+    border: 1px solid #ededed;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: $shadow;
+}
+
 #right_project_oasis {
     width: 50%;
     float: right;
+}
+
+#right_project_oasis img {
+    border: 1px solid #ededed;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: $shadow;
 }
 
 #oasis_logo {
@@ -339,20 +370,43 @@ span.ti-container::selection {
     margin-bottom: 30px;
 }
 
-.oasis_logo {
+#oasis_logo img {
     width: 30%;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-#oasis_video {
-    margin: 0 auto;
-    display: block;
-    border: 1px solid #ededed;
+    margin-right: 10px;
+    box-shadow: $shadow;
 }
 
 /* END OASIS */
+
+/* MUSIC + MOTION */
+
+.mm_video {
+    width: 90%;
+    box-shadow: $shadow;
+}
+
+.mm_img {
+    width: 90%;
+    box-shadow: $shadow;
+}
+
+/* END MUSIC + MOTION  */
+
+/* FRUIT */
+
+.fruit_preview img {
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: $shadow;
+}
+
+.fruit_combo {
+    box-shadow: $shadow;
+}
+
+/* FRUIT END */
 
 /* GLITCH */
 
@@ -365,21 +419,8 @@ span.ti-container::selection {
 
 /* GLITCH END */
 
-.item.item1 {
-/*    padding-left: 0;*/
-}
-
-//
-// .masthead
-//
-
-.wrapper-masthead {
-  margin-bottom: 50px;
-}
-
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -440,7 +481,6 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-//  text-transform: uppercase;
 
   @include mobile {
     float: none;
@@ -455,28 +495,17 @@ nav {
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-//    text-transform: uppercase;
       &:hover, &:active {
         color: $darkGray;
-        text-decoration: underline;  
+        text-decoration: underline;
       }
 
     @include mobile {
-//      margin: 0 10px;
       color: $darkGray;
     }
-    
+
   }
 }
-
-//nav a:hover, a:active {
-//    color: $darkGray;
-//    text-decoration: underline;
-//}
-
-//
-// .main
-//
 
 .posts > .post {
   padding-bottom: 2em;
@@ -519,7 +548,7 @@ footer {
   padding: 20px 0;
   text-align: center;
   color: #EEE;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .fa-heart {
@@ -528,22 +557,18 @@ footer {
 }
 
 .fa-instagram {
-    color: #000;
     padding-right: 10px;
 }
 
 .fa-twitter {
-    color: #000;
     padding-right: 10px;
 }
 
 .fa-linkedin {
-    color: #000;
     padding-right: 10px;
 }
 
 .fa-facebook {
-    color: #000;
     padding-right: 10px;
 }
 
@@ -552,7 +577,7 @@ footer {
     .slogan {
         font-size: 27px;
     }
-    
+
     .item {
         width: 46%;
     }
@@ -655,33 +680,115 @@ footer {
     color: #e0e0e0;
 }
 
-//###
+//#########################################################
 // SICKO MODE
-//###
+//#########################################################
 
-$dark-color: #111;
+$dark-color: #282D3E;
 $light-color: #fff;
 
 body.dark-mode {
   background-color: $dark-color;
   color: $light-color;
+  transition: $fade;
   a {
-    color: $dark-color;
+    color: $light-color;
   }
-  button {
-//    background-color: $light-color;
-//    color: $dark-color;
+  h2, h3, h5, h6 {
+      color: $light-color;
+  }
+  .dark_syntax {
+      color: #8BE9FD;
+  }
+  #logo {
+      display: none;
+      position: absolute;
+  }
+  #logo_white {
+      display: inline-block;
+      margin-left: 13px;
+  }
+  nav a {
+      color: $light-color;
   }
 }
 
-body.light-mode {
-  background-color: $light-color;
-  color: $dark-color;
-  a {
-    color: $dark-color;
+  #logo {
+    display: inline-block;
   }
-  button {
-//    background-color: $dark-color;
-//    color: $light-color;
+  #logo_white {
+    display: none;
   }
+
+//body.light-mode {
+//  background-color: $light-color;
+//  color: $dark-color;
+//  a {
+//    color: $dark-color;
+//  }
+//  #logo {
+//    display: inline-block;
+//  }
+//  #logo_white {
+//    display: none;
+//  }
+//}
+
+.switch {
+  position: relative;
+  display: inline;
+  width: 55px;
+  height: 30px;
+  float: right;
+  margin-left: 15px;
+  margin-top: -3px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "🌗";
+  height: 23px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  font-size: 20px;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
