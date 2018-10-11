@@ -163,8 +163,7 @@ img {
 }
 
 .slogan {
-    margin: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 90px;
     font-family: 'Slabo 27px', serif;
     line-height: 50px;
     font-size: 38px;
@@ -399,12 +398,11 @@ video {
     width: 90%;
     margin-bottom: 10px;
     margin-top: 10px;
-    box-shadow: $shadow;
 }
 
-.fruit_combo {
-    box-shadow: $shadow;
-}
+//.fruit_combo {
+//    box-shadow: $shadow;
+//}
 
 /* FRUIT END */
 
@@ -573,13 +571,23 @@ footer {
 }
 
 /* Mobile Styling */
+@media only screen and (max-width: 900px) {
+    .about_me {
+        font-size: 15px;
+    }
+}
+
 @media only screen and (max-width: 855px) {
     .slogan {
         font-size: 27px;
+        margin-bottom: 50px !important;
+        margin-top: 25px;
     }
-
     .item {
         width: 46%;
+    }
+    #projects p {
+        font-size: 16px;
     }
 }
 
@@ -595,26 +603,69 @@ footer {
     }
 }
 
+@media only screen and (max-width: 750px) {
+    nav {
+        font-size: 15px;
+    }
+    #photo {
+        width: 60%;
+        margin: 0 auto;
+        display: block;
+    }
+    .slogan {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    #intro {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #photo img {
+        width: 100%;
+    }
+    #left_project {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #right_project {
+        width: 100%;
+    }
+    #projects h3 {
+        font-size: 16px;
+    }
+}
+
 @media only screen and (max-width: 666px) {
     .item {
         width: 100%;
         display: inline-block;
         margin-bottom: 25px;
     }
+    .project_title {
+        font-size: 20px;
+    }
+    #left_project img {
+        width: 100%;
+    }
+    #right_project img {
+        width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 640px) {
     .slogan {
         font-size: 23px;
-    }
-    #photo {
-        width: 100%;
-    }
-    #photo img {
-        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 30px !important;
     }
     #intro {
         width: 100%;
+        margin-top: 0px;
+    }
+    .title_heavy {
+        font-size: 18px;
     }
     .resume_h3 {
         font-size: 20px;
@@ -654,6 +705,17 @@ footer {
 @media only screen and (max-width: 530px) {
     .slogan {
         font-size: 17px;
+        margin-top: 0px !important;
+        margin-bottom: 20px !important;
+    }
+    #intro {
+        margin-top: 10px;
+    }
+    .title_heavy {
+        font-size: 15px;
+    }
+    .about_me {
+        font-size: 13px;
     }
     .item {
         margin-left: 0px !important;
@@ -711,10 +773,17 @@ body.dark-mode {
   nav a {
       color: $light-color;
   }
+    .project_sketch {
+        box-shadow: $shadow;
+    }
+    .project_img {
+        box-shadow: $shadow;
+    }
 }
 
   #logo {
     display: inline-block;
+    width: 60px;
   }
   #logo_white {
     display: none;

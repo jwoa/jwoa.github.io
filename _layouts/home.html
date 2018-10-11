@@ -31,7 +31,7 @@
       <div class="container">
         <header class="masthead clearfix">
 <!--          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/logo_white.png" id="logo_white" /></a>
+<!--          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/logo_white.png" id="logo_white" /></a>-->
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/logo.png" id="logo" /></a>
 
           <nav>
@@ -39,13 +39,15 @@
             <a href="{{ site.baseurl }}/resume">Resume</a>
             <a href="{{ site.baseurl }}/projects">Projects</a>
             <a href="{{ site.baseurl }}/blog">Blog</a>
+            
+<!--
             <span> | </span>
               
             <label class="switch">
                 <input type="checkbox">
-<!--                <span class="slider round" id="theme" onclick="sickoMode()"></span>-->
                 <span class="slider round" id="theme"></span>
             </label>
+-->
               
           </nav>
         </header>
@@ -74,6 +76,12 @@ document.getElementById('theme').addEventListener('click', function() {
 if (JSON.parse(localStorage.getItem('dark-mode-on'))) {
     document.body.classList.add('dark-mode');
 }
+    
+let goddard = document.getElementById('goddard');  
+goddard.onmouseover = function() {
+    this.src = '{{ site.baseurl }}/images/goddard/goddard_soon.png';
+    console.log('test');
+});
 
 
 </script>
