@@ -160,12 +160,13 @@ img {
     position: relative;
     width: 100%;
     display: inline-block;
+    margin-top: 6%;
 }
 
 .slogan {
-    margin-bottom: 90px;
+//    margin-bottom: 90px;
+    margin: 15px 0px 60px 0px;
     font-family: 'Slabo 27px', serif;
-    line-height: 50px;
     font-size: 38px;
     text-align: center;
     color: #333333;
@@ -202,9 +203,8 @@ span.ti-container::selection {
     float: right;
 }
 
-.title_heavy {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
+.name {
+    font-weight: 500;
     color: #333333;
 }
 
@@ -215,8 +215,8 @@ span.ti-container::selection {
 // RESUME PAGE LAYOUT
 
 .resume_h3 {
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 22px;
+    font-weight: 500;
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     text-decoration: underline;
@@ -227,7 +227,7 @@ span.ti-container::selection {
     font-size: 18px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .resume_h6 {
@@ -248,13 +248,14 @@ span.ti-container::selection {
 
 .contact {
     display: inline;
+    font-weight: 300;
 }
 
 .download {
     float: right;
     display: inline;
-    padding: 15px;
-    border-radius: 30px;
+    padding: 10px;
+    border-radius: 20px;
     background-color: #313E50;
     color: #fff;
     margin-top: -10px;
@@ -272,7 +273,7 @@ span.ti-container::selection {
 }
 
 .item {
-    width: 30%;
+    width: 31%;
     display: inline-block;
     margin: 9px;
 }
@@ -478,7 +479,7 @@ nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 18px;
+  font-size: 16px;
 
   @include mobile {
     float: none;
@@ -491,12 +492,18 @@ nav {
     margin-left: 20px;
     color: $darkGray;
     text-align: right;
-    font-weight: 300;
+    font-weight: 500;
+    text-transform: uppercase;
     letter-spacing: 1px;
       &:hover, &:active {
         color: $darkGray;
         text-decoration: underline;
       }
+    
+    .active {
+        color: $darkGray;
+        text-decoration: underline;  
+    }
 
     @include mobile {
       color: $darkGray;
@@ -874,4 +881,12 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+hr {
+    margin-top: 3%;
+    height: 1px;
+    color: #ededed;
+    background-color: #ededed;
+    border: none;
 }
