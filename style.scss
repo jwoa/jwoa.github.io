@@ -890,3 +890,25 @@ hr {
     background-color: #ededed;
     border: none;
 }
+
+// THESIS PAGE
+
+.title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    margin-top: 50px;
+}
+
+.sub_title {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+
+.doc_link {
+    font-weight: 400;
+    text-decoration: underline;
+}
