@@ -579,6 +579,9 @@ footer {
 
 /* Mobile Styling */
 @media only screen and (max-width: 900px) {
+    .title {
+        font-size: 25px;
+    }
     .about_me {
         font-size: 15px;
     }
@@ -611,6 +614,9 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
+    .title {
+        font-size: 24px;
+    }
     nav {
         font-size: 15px;
     }
@@ -644,6 +650,12 @@ footer {
 }
 
 @media only screen and (max-width: 666px) {
+    .title {
+        font-size: 20px;
+    }
+    .sub_title {
+        font-size: 17px;
+    }
     .item {
         width: 100%;
         display: inline-block;
@@ -911,4 +923,14 @@ hr {
 .doc_link {
     font-weight: 400;
     text-decoration: underline;
+}
+
+.half_left {
+    width: 48%;
+    padding-right: 1%;
+}
+
+.half_right {
+    width: 48%;
+    padding-left: 1%;
 }
