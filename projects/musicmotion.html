@@ -7,14 +7,15 @@ layout: home
         <img src="{{ site.baseurl }}/images/mm/musicmotionbanner.png" alt="music + motion" class="banner"/>
         
         <h2 class="project_title">music + motion</h2>
-        <li class="status in-progress">(made with electron, nodejs, html, scss, p5js, camtracker)</li><br/>
-        <p>Music + Motion is a web application that allows users to see how people move and react to music. I am curious about how we all move differently to the same things, what makes me tap my feet may make you move your hands instead. I want to show that we’re more similar than different through music. 
+<!--        <li class="status in-progress">(made with electron, nodejs, html, scss, p5js, camtracker)</li>-->
+        <br/>
+        <p class="about_me">Music + Motion is a web application that allows users to see how people move and react to music. I am curious about how we all move differently to the same things, what makes me tap my feet may make you move your hands instead. I want to show that we’re more similar than different through music. 
         <br/>
         <br/>
         From it’s initial conception to the stage it’s at now the project has changed a lot. What began as a way to just be expressive through music has now turned into an application that will analyze the users face for reactions to the music their listening to. When the user does something that can be defined as showing emotion, an outline of the face will show up.  This can be used for many purposes including studying how people react to certain content. Also, when you consider various data points such as where the users are from, their gender, age etc it is possible to see patterns or similarities between users based on the songs as well.</p>
         
         <h3>Initial Idea</h3>
-            <p>When this project first began I really wanted it to be focused on gestures and how the user can use them to interact with their computer. I decided to use music as the base for this project because I was also interested in human behavior when it comes to music. This interest came from just observation of people on public transport and how much they move to their music and what part of their body they move. </p>
+            <p class="about_me">When this project first began I really wanted it to be focused on gestures and how the user can use them to interact with their computer. I decided to use music as the base for this project because I was also interested in human behavior when it comes to music. This interest came from just observation of people on public transport and how much they move to their music and what part of their body they move. </p>
         
         <h3>Precedents</h3>
             
@@ -28,11 +29,11 @@ layout: home
             </div>
         </div>
         
-        <p>When it came to my observations there was also something very special that I remembered, music can make people move across all genres. From this I started to look at how important it is throughout cultures as well and other ways that people use music in their daily life. </p>
+        <p class="about_me">When it came to my observations there was also something very special that I remembered, music can make people move across all genres. From this I started to look at how important it is throughout cultures as well and other ways that people use music in their daily life. </p>
         
-        <p>I also looked into other examples of music and how multiple people connect over it and I remembered a game I used to love when I was younger called Rock Band. Rock Band allowed multiple players to play together in a band with each person taking over a different role. You had someone on the vocals, someone playing the drums, and someone else on the guitar. The goal was to work together as a team and perform the best you can together.</p>
+        <p class="about_me">I also looked into other examples of music and how multiple people connect over it and I remembered a game I used to love when I was younger called Rock Band. Rock Band allowed multiple players to play together in a band with each person taking over a different role. You had someone on the vocals, someone playing the drums, and someone else on the guitar. The goal was to work together as a team and perform the best you can together.</p>
         
-        <p>Whilst scrolling through my Twitter timeline I noticed something that I hadn’t seen for a while, someone with an image over their avatar to show support for something. I really liked the idea of the overlay being opaque enough that you can see the users face below it still, not replacing them but instead adding to it. Having the unique user below with the same overlay applied, similar to people being their own person and listening to the same music as someone else.</p>
+        <p class="about_me">Whilst scrolling through my Twitter timeline I noticed something that I hadn’t seen for a while, someone with an image over their avatar to show support for something. I really liked the idea of the overlay being opaque enough that you can see the users face below it still, not replacing them but instead adding to it. Having the unique user below with the same overlay applied, similar to people being their own person and listening to the same music as someone else.</p>
     
         <div id="portfolio_wrapper">
             <div id="left_project">
@@ -45,7 +46,7 @@ layout: home
         </div>
         
         <h3>First Draft</h3>
-        <p>I wanted to use something like the Arduino to detect physical motion and use that to trigger an event on screen but due to what I wanted to do it would have made more sense to use something like the Leap Motion. The movement of the users hands over the sensors would then change the elements on the screen by size, color, design etc. 
+        <p class="about_me">I wanted to use something like the Arduino to detect physical motion and use that to trigger an event on screen but due to what I wanted to do it would have made more sense to use something like the Leap Motion. The movement of the users hands over the sensors would then change the elements on the screen by size, color, design etc. 
         <br/>
         <br/>
         Due to this, I scrapped this initial idea and decided to use the webcam to capture motion instead. The initials drafts of the music selection and motion page were mocked up.</p>
@@ -59,13 +60,13 @@ layout: home
             </div>
         </div>
 
-        <p>After switching the focus to the web camera instead of the Arduino I also decided to change the gestures/interactions. Instead of having hand gestures I began experimenting with using the fingers as brushes and selectors for moving elements around. 
+        <p class="about_me">After switching the focus to the web camera instead of the Arduino I also decided to change the gestures/interactions. Instead of having hand gestures I began experimenting with using the fingers as brushes and selectors for moving elements around. 
         <br/>
         <br/>
         The purpose of this approach was to allow the users to feel like they are painting on a canvas of some sort. When multiple users use the app their work we’ll be overlaid onto the same canvas, allowing them to view the similarities or differences between their reactions to the songs. </p>
         
         <h3>Final Prototype</h3>
-        <p>I modified the design to be more simple and since music is copyrighted I took away the option of searching for a song and instead found videos for each genre that would serve as placeholders for the demonstration. In the opening page the user is presented with the choice of Hands or Face. This will determine how they interact with the application.</p>
+        <p class="about_me">I modified the design to be more simple and since music is copyrighted I took away the option of searching for a song and instead found videos for each genre that would serve as placeholders for the demonstration. In the opening page the user is presented with the choice of Hands or Face. This will determine how they interact with the application.</p>
         
         <div id="left_project">
             <img src="{{ site.baseurl }}/images/mm/home.png" class="mm_img" alt="Home" />
@@ -74,7 +75,7 @@ layout: home
             <img src="{{ site.baseurl }}/images/mm/choices.png" class="mm_img" alt="Choices" />
         </div>
         
-        <p>For the final version of the prototyping stage I ran into errors when trying to use fingers as the brushes and selectors. So, in the meantime I resorted to using the mouse and the keys to edit the strokes and colors created by the user. But, I still really wanted to use the webcam so I came up with the idea of overlaying the outline of the users face over the music video. 
+        <p class="about_me">For the final version of the prototyping stage I ran into errors when trying to use fingers as the brushes and selectors. So, in the meantime I resorted to using the mouse and the keys to edit the strokes and colors created by the user. But, I still really wanted to use the webcam so I came up with the idea of overlaying the outline of the users face over the music video. 
         <br/>
         <br/>
         The idea behind this was to allow the users to see how the other person is reacting live to the music. They may find that someone may not be as enthusiastic at certain parts or they may find that they have more in common than they thought. Whilst demo-ing this at The New School a lot of the feedback was about the future iterations or how this application can be used in the music industry for gathering feedback to new songs or videos and what could be done with this information</p>
@@ -106,6 +107,6 @@ layout: home
 -->
         
         <h3>Future Iteration</h3>
-        <p>The next iteration of the application will give the user direct feedback whilst they use the app and a report after of their types of movements and how many other people had similar reactions.</p>
+        <p class="about_me">The next iteration of the application will give the user direct feedback whilst they use the app and a report after of their types of movements and how many other people had similar reactions.</p>
         
     </div>
