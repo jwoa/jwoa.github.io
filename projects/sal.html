@@ -29,8 +29,12 @@ layout: home
         <div class="project_section">
             <h3>Form Focus</h3>
             <img src="{{ site.baseurl }}/images/sal/sal_research.png" />
-                <p class="about_me">Initially I wanted to have a one page design with the information displayed but the format became very cluttered when prototyping. So, after some revision I settled on a single page with tabs to display different pieces of information relative to the user. This is currently what I've settled on but it is subject to change and I will update this page if it does.</p>
-        
+                <p class="about_me">Initially I wanted to have a one page design with the information displayed but the format became very cluttered when prototyping. So, after some revision I settled on a single page with tabs to display different pieces of information relative to the user. This is currently what I've settled on but it is subject to change and I will update this page if it does.
+                <br/>
+                <br/>
+                In order to make sure the user experiences some biases I added a single if/else statement to the code to determine the outcome from the beginning. When the user takes their picture SAL will analyze them and determine their race. If they're identified as white they automatically pass. Also, during the pledge of allegiance, SAL takes a photo of the user and if they have their hand over their chest they gain extra points. This was just for the sake of the prototype, in the future iteration the final outcome will be based on various other factors as well. </p>
+                <br/>
+
                 <video width="100%" autoplay loop>
                     <source src="{{ site.baseurl }}/images/sal/sal_demo.mp4" type="video/mp4">
                     <source src="{{ site.baseurl }}/images/sal/sal_demo.ogg" type="video/ogg">

@@ -30,7 +30,7 @@ body {
 .container {
   margin: 0 auto;
   padding: 0 10px;
-  width: 80%;
+  width: 90%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -274,10 +274,11 @@ span.ti-container::selection {
 #projects {
     margin: 0 auto;
     text-align: center;
+    margin-top: 3%;
 }
 
 .item {
-    width: 31%;
+    width: 30%;
     display: inline-block;
     margin: 9px;
 }
@@ -556,7 +557,7 @@ footer {
   margin-top: 50px;
   padding: 20px 0;
   text-align: center;
-  color: #EEE;
+  color: #ababab;
   font-size: 10px;
 }
 
@@ -682,6 +683,12 @@ footer {
         font-size: 23px;
         margin-top: 10px;
         margin-bottom: 30px !important;
+    }
+    nav a {
+        color: #333;
+        margin-left: 0px;
+        font-size: 12px;
+        padding-right: 15px;
     }
     #intro {
         width: 100%;
@@ -931,10 +938,12 @@ hr {
 
 .half_left {
     width: 48%;
-    padding-right: 1%;
+    margin-right: 1%;
+    box-shadow: $shadow;
 }
 
 .half_right {
     width: 48%;
-    padding-left: 1%;
+    margin-left: 1%;
+    box-shadow: $shadow;
 }
