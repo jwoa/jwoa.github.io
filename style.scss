@@ -16,6 +16,13 @@
 /* BASE RULES */
 /**************/
 
+*::-moz-selection {
+    background: yellow !important;
+}
+::selection {
+    background: yellow !important;
+}
+
 html {
   font-size: 100%;
 }
