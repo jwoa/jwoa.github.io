@@ -12,24 +12,26 @@
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <script src="https://use.fontawesome.com/384072207c.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="../js/sickomode.js"></script>
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-      
+
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">  
-    
+
   </head>
 
-    <body >
+    <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/logo.png" id="logo" /></a>
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.baseurl }}/images/logo_new.png" id="logo" /></a>
 
           <nav>
             <a href="{{ site.baseurl }}/">Home</a>
@@ -37,8 +39,9 @@
             <a href="{{ site.baseurl }}/projects">Projects</a>
             <a href="{{ site.baseurl }}/thesis">Thesis</a>
 <!--            <a href="{{ site.baseurl }}/blog">Blog</a>-->
+        <div id="switch" aria-label="sicko mode">🌗 </div>
           </nav>
-            
+
         </header>
       </div>
     </div>
@@ -53,8 +56,14 @@
             <a href="http://seasonsix.co">S6</a>
         </footer>
     </div>
-      
+
     {% include analytics.html %}
 
+    <script>
+        $(function() {
+            console.log("Draggable");
+            $("#photo").draggable();
+        });
+    </script>
   </body>
 </html>

@@ -36,9 +36,16 @@ body {
     transition: all 0.30s ease-out;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    // width: 100%;
+}
+
 .container {
   margin: 0 auto;
-  padding: 0 10px;
+  // padding: 0 10px;
+  margin-top: 125px;
   width: 90%;
 }
 
@@ -77,8 +84,10 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
-  font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.7;
 }
 
 p::selection {
@@ -125,6 +134,12 @@ strong, b {
 
 img {
   max-width: 100%;
+}
+
+hr {
+    margin: 40px 0px 40px 0px;
+    border: 0;
+    border-top: 1px solid #ededed;
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -199,11 +214,13 @@ span.ti-container::selection {
 #photo {
     width: 50%;
     display: inline-block;
+    z-index: 2;
 }
 
 #photo img {
     width: 70%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: grab;
 }
 
 #intro {
@@ -253,10 +270,10 @@ span.ti-container::selection {
 .resume_desc {
     font-family: 'Lato', sans-serif;
     font-weight: 300;
-}
 
-.resume_desc li {
-    text-align: left;
+    li {
+        text-align: left;
+    }
 }
 
 .contact {
@@ -287,9 +304,33 @@ span.ti-container::selection {
 }
 
 .item {
-    width: 30%;
+    width: 33%;
     display: inline-block;
-    margin: 9px;
+    // margin: 9px;
+}
+
+#freelance {
+    width: 100%;
+}
+
+.projectRow {
+    display: inline-flex;
+    width: 100%;
+}
+
+.projectLeft {
+    width: 40%;
+    display: inline-block;
+}
+
+.projectRight {
+    width: 60%;
+    padding-left: 5%;
+    display: inline-block;;
+}
+
+.boldDesc {
+    font-weight: bold;
 }
 
 /* INDIVIDUAL PROJECTS PAGE */
@@ -433,7 +474,10 @@ video {
 /* GLITCH END */
 
 .masthead {
-  padding: 20px 0;
+  padding: 20px 0 10px 0;
+  width: 90%;
+  background-color: #fff;
+  z-index: 1;
 
   @include mobile {
     text-align: center;
@@ -494,6 +538,7 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 16px;
+  display: flex;
 
   @include mobile {
     float: none;
@@ -513,10 +558,10 @@ nav {
         color: $darkGray;
         text-decoration: underline;
       }
-    
+
     .active {
         color: $darkGray;
-        text-decoration: underline;  
+        text-decoration: underline;
     }
 
     @include mobile {
@@ -590,8 +635,96 @@ footer {
 .fa-facebook {
     padding-right: 10px;
 }
-
+/////////////////////////////////////////////////////////////////////
 /* Mobile Styling */
+/////////////////////////////////////////////////////////////////////
+
+@media only screen and (max-width: 1024px) {
+    .item {
+        width: 32%;
+    }
+    .projectRow {
+        margin-bottom: 50px;
+    }
+    h2 {
+        margin: 15px 0 15px 0;
+        line-height: 0;
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #logo {
+        width: 50px;
+    }
+    nav {
+        font-size: 14px;
+    }
+    .container {
+        margin-top: 150px;
+    }
+    .item {
+        width: 49%;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .container {
+        margin-top: 110px;
+    }
+    nav {
+        margin-top: 10px;
+        a {
+            margin-left: 0;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 11px;
+        }
+    }
+    .masthead {
+        text-align: left;
+        z-index: 10;
+    }
+    body.dark #logo {
+        width: 40px;
+    }
+    .site-avatar {
+        float: left;
+        display: inline;
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+    }
+    #switch {
+        font-size: 14px !important;
+        cursor: pointer;
+        display: inline-flex;
+        padding-left: 0 !important;
+    }
+    .slogan {
+        margin-bottom: 30px !important;
+    }
+    #photo {
+        margin-bottom: 50px !important;
+    }
+    .projectRow {
+        display: block;
+    }
+    .projectLeft {
+        width: 100%;
+    }
+    .projectRight {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .title {
         font-size: 25px;
@@ -606,9 +739,6 @@ footer {
         font-size: 27px;
         margin-bottom: 50px !important;
         margin-top: 25px;
-    }
-    .item {
-        width: 46%;
     }
     #projects p {
         font-size: 16px;
@@ -638,6 +768,7 @@ footer {
         width: 60%;
         margin: 0 auto;
         display: block;
+        cursor: grab;
     }
     .slogan {
         margin: 0;
@@ -684,7 +815,7 @@ footer {
     #right_project img {
         width: 100%;
     }
-    
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -692,12 +823,6 @@ footer {
         font-size: 23px;
         margin-top: 10px;
         margin-bottom: 30px !important;
-    }
-    nav a {
-        color: #333;
-        margin-left: 0px;
-        font-size: 12px;
-        padding-right: 15px;
     }
     #intro {
         width: 100%;
@@ -745,7 +870,7 @@ footer {
     .slogan {
         font-size: 17px;
         margin-top: 0px !important;
-        margin-bottom: 20px !important;
+        // margin-bottom: 20px !important;
     }
     #intro {
         margin-top: 10px;
@@ -762,9 +887,14 @@ footer {
 
 }
 
-@media only screen and (max-width: 400px) {
-    nav {
-        font-size: 11px;
+@media only screen and (max-width: 375px) {
+    nav a {
+        font-size: 10px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    #switch {
+        font-size: 10px !important;
     }
 }
 
@@ -799,10 +929,17 @@ footer {
 // SICKO MODE
 //#########################################################
 
-$dark-color: #282D3E;
+$dark-color: #1E2227;
 $light-color: #fff;
 
-body.dark-mode {
+#switch {
+    font-size: 22px;
+    cursor: pointer;
+    margin-top: -5px;
+    padding-left: 20px;
+}
+
+body.dark {
   background-color: $dark-color;
   color: $light-color;
   transition: $fade;
@@ -815,13 +952,12 @@ body.dark-mode {
   .dark_syntax {
       color: #8BE9FD;
   }
-  #logo {
-      display: none;
-      position: absolute;
+  .name {
+      color: $light-color;
   }
-  #logo_white {
-      display: inline-block;
-      margin-left: 13px;
+  #logo {
+      filter: invert(100%);
+      position: absolute;
   }
   nav a {
       color: $light-color;
@@ -832,6 +968,10 @@ body.dark-mode {
     .project_img {
         box-shadow: $shadow;
     }
+    .masthead {
+        background-color: #1E2227;
+        transition: all 0.3s ease-out;
+    }
 }
 
   #logo {
@@ -841,118 +981,3 @@ body.dark-mode {
   #logo_white {
     display: none;
   }
-
-//body.light-mode {
-//  background-color: $light-color;
-//  color: $dark-color;
-//  a {
-//    color: $dark-color;
-//  }
-//  #logo {
-//    display: inline-block;
-//  }
-//  #logo_white {
-//    display: none;
-//  }
-//}
-
-.switch {
-  position: relative;
-  display: inline;
-  width: 55px;
-  height: 30px;
-  float: right;
-  margin-left: 15px;
-  margin-top: -3px;
-}
-
-.switch input {display:none;}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "🌗";
-  height: 23px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  font-size: 20px;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-hr {
-    margin-top: 3%;
-    height: 1px;
-    color: #ededed;
-    background-color: #ededed;
-    border: none;
-}
-
-// THESIS PAGE
-
-.title {
-    font-weight: 500;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    text-decoration: underline;
-    margin-top: 50px;
-}
-
-.sub_title {
-    font-weight: 500;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    margin-top: 50px;
-}
-
-.doc_link {
-    font-weight: 400;
-    text-decoration: underline;
-}
-
-.half_left {
-    width: 48%;
-    margin-right: 1%;
-    box-shadow: $shadow;
-}
-
-.half_right {
-    width: 48%;
-    margin-left: 1%;
-    box-shadow: $shadow;
-}
