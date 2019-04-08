@@ -335,8 +335,22 @@ span.ti-container::selection {
 
 /* INDIVIDUAL PROJECTS PAGE */
 
+img.banner {
+    width: 100%;
+}
+
 .project_section {
     margin-top: 5%;
+}
+
+.half_left {
+    box-shadow: $shadow;
+    width: 49%;
+}
+
+.half_right {
+    box-shadow: $shadow;
+    width: 49%;
 }
 
 #projects h3 {
@@ -347,10 +361,11 @@ span.ti-container::selection {
     text-align: left;
 }
 
-#portfolio_wrapper {
+.portfolio_wrapper {
     height: auto;
     width: 100%;
     display: inline-block;
+    margin: 5% 0;
 }
 
 #left_project {
@@ -456,9 +471,14 @@ video {
     margin-top: 10px;
 }
 
-//.fruit_combo {
-//    box-shadow: $shadow;
-//}
+.fruit_combo {
+   box-shadow: $shadow;
+   margin: 5% 0;
+}
+
+.finalimage {
+    margin-top: 5%;
+}
 
 /* FRUIT END */
 
@@ -723,6 +743,13 @@ footer {
     .projectRight {
         width: 100%;
     }
+    #oasis_logo img {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 10%;
+        margin-right: 10px;
+        box-shadow: $shadow;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -813,6 +840,12 @@ footer {
         width: 100%;
     }
     #right_project img {
+        width: 100%;
+    }
+    img.half_left {
+        width: 100%;
+    }
+    img.half_right {
         width: 100%;
     }
 
@@ -907,9 +940,9 @@ footer {
     text-decoration: none;
     list-style: none;
     font-size: 15px;
-    color: #e0e0e0;
+    color: #d0d0d0;
     a {
-        color: #e0e0e0;
+        color: #d0d0d0;
         text-decoration: underline;
     }
 }
