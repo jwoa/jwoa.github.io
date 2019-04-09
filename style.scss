@@ -33,7 +33,7 @@ body {
 //	background: $white;
   font: 18px/1.4 $helvetica;
 //  color: $darkGray;
-    transition: all 0.30s ease-out;
+    transition: all 0.10s ease-out;
 }
 
 header {
@@ -992,6 +992,9 @@ body.dark {
       filter: invert(100%);
       position: absolute;
   }
+  .title {
+      color: $light-color;
+  }
   nav a {
       color: $light-color;
   }
@@ -1003,7 +1006,9 @@ body.dark {
     }
     .masthead {
         background-color: #1E2227;
-        transition: all 0.3s ease-out;
+        transition: all 0.10s ease-out;
+        padding: 20px 0px 25px 0px;
+        z-index: 1;
     }
     .resume_date {
         color: $light-color;
