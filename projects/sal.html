@@ -9,57 +9,104 @@ layout: home
         <h2 class="project_title">SUPER AMERICAN LICENSE</h2>
         <li class="status in-progress">(made with electron, nodejs, html, scss, p5js, ml5)</li>
         <br/>
-        <p>If machines are being run on biased data what does that mean for the future of humanity? Especially for those who are targeted? The goal of this project is to highlight and stress the importance of human bias in datasets and what that could mean when it comes to the future of technology.</p>
+        <h3 class="sub_title">Abstract</h3>
+        <p>If machines are being run on biased data what does that mean for the future of humanity? Especially for those who are targeted?
+        <br/>
+        <br/>
+        SAL demonstrates the dangers of biased data in technology. It watches and examines the user all throughout the project and judges them based on corrupt datasets. The goal of this project is to highlight and stress the importance of human bias in datasets and what that could mean when it comes to the future of technology.</p>
 
-        <div class="project_section">
-            <h3>Concept & Domains</h3>
-            <p>What does the future <strike>look</strike> feel like when systems from the government are running on biased data? SAL demonstrates the dangers of biased data in technology. It watches and examines the user all throughout the project and judges them based on corrupt datasets.
-            </p>
+        <!-- End Abstract -->
 
-            <span class="resume_desc">
-                <ul>
-                    <li>Human-Computer Interaction</li>
-                    <li>Biased Data</li>
-                    <li>Machine Learning</li>
-                </ul>
-            </span>
+        <!-- Thoughts + Goals-->
+        <h3 class="sub_title">Thoughts & Goals</h3>
+        <p>The questions that are really fueling me throughout this process are a mixture of personal and ethical thoughts and ideas. As a black creative who is interested in machine learning I can not help but think of the dangers of misidentification or biased data in machines. Machine learning and artificial intelligence have been automating our lives and making things easier. What happens when devices are unintentionally fed biased data?</p>
 
-            <p>I used ML5 and Face++ to help build the profile of the user. ML5 (PoseNet) was used to watch the users movements for certain poses and behavior. Face++ was used to set the users score and estimate their age, race, and gender.</p>
-        </div>
+        <span class="resume_desc">
+            <ul>
+                <li>Would the developer or the company be held responsible?</li>
+                <li>What groups of people would suffer the most from something like this?</li>
+                <li>As a developer, what am I doing about this problem that I care so much about?</li>
+                <li>I know how my personal connection to this but how can I express that to the users?</li>
+                <li>How blatant or subtle should the biases be?</li>
+                <li>What form can get this across without losing the user?</li>
+            </ul>
+        </span>
 
-        <div class="project_section">
-            <h3>Form Focus</h3>
-            <img src="{{ site.baseurl }}/images/sal/sal_research.png" />
-                <p class="about_me">Initially I wanted to have a one page design with the information displayed but the format became very cluttered when prototyping. So, after some revision I settled on a single page with tabs to display different pieces of information relative to the user. This is currently what I've settled on but it is subject to change and I will update this page if it does.
-                <br/>
-                <br/>
-                In order to make sure the user experiences some biases I added a single if/else statement to the code to determine the outcome from the beginning. When the user takes their picture SAL will analyze them and determine their race. If they're identified as white they automatically pass. Also, during the pledge of allegiance, SAL takes a photo of the user and if they have their hand over their chest they gain extra points. This was just for the sake of the prototype, in the future iteration the final outcome will be based on various other factors as well. </p>
-                <br/>
+        <p class="resume_desc">In the end I believe that through his experience the users will leave with a feeling of understanding, empathy, or contemplation. To show this I am building a TSA system that demonstrates the problem and having the user experience it first hand through the process. Depending on who is taking it their results will vary. By placing the power in the hands of the system I'm replicating the power that TSA agents have over travelers.
+        <br/>
+        <br/>
+        I am making this to highlight the importance of accurate representation in data and technology. I experience acts of micro-aggression and racism all the time. Like many other minorities I've noticed that it changes based on where I am and what I'm wearing. I constantly think about the future and what it will be like, both the good and the bad. If machines are programmed by people with certain biases or feelings towards others what does that future feel like? As a creative I can't help but think about the implications of the things I'm creating and who I'm creating them for.
+        <br/>
+        <br/>
+        The goal of this project is to let people see a side of technology that they don't usually see. Unless you are interested in it you wouldn't really know how your data is being used on you or how you are being classified. I want people to be aware of this and how dangerous it can be if used incorrectly against a specific group of people. We've already seen this sort of classification and treatment being rolled out in various nations like the US (Muslim ban) and China (Social ranking).</p>
+        <!--End Thoughts + Goals-->
 
-                <video width="100%" autoplay loop>
-                    <source src="{{ site.baseurl }}/images/sal/sal_demo.mp4" type="video/mp4">
-                    <source src="{{ site.baseurl }}/images/sal/sal_demo.ogg" type="video/ogg">
-                    Your browser does not support HTML5 video.
-                </video>
-        </div>
+        <!-- Research -->
+        <h3 class="sub_title">Research</h3>
+        <img src="{{ site.baseurl }}/images/sal/sal_research.png" />
+        <p class="about_me">I am studying the possible dangers of biased data in machines. I chose this because as someone who experiences micro-aggressions and racism I worry about what will happen when people teach machines this behavior. They may not do it intentionally and that's even scarier. I spent the last three months exploring what the future could possibly feel like for someone like me.
+        <br/>
+        <br/>
+        My domains of this research and interest for this project varied a lot throughout the last few months. As my ideas and concepts shifted some domains came and left but two always remained. Human-Computer Interaction and Biased Data. Aside from the personal reasons, I'm interested in this area because I'm a developer and it is something that I must hold myself accountable for as well. Speaking to people and visiting museums/researching work have been my greatest source of information and knowledge. The trip to the Whitney Museum in particular has proven to be the most helpful.
+        <br/>
+        <br/>
+            It is highlighted in the <a href="{{ site.baseurl }}/report.pdf" target="_blank" class="doc_link">Community of Practice Report</a> which serves as my main document of research.</p>
+        <!-- End Research -->
 
-        <div class="project_section">
+        <!-- Audience & Experience -->
+        <h3 class="sub_title">Audience & Experience</h3>
+        <p>This project isn't for a specific group of people, although some may relate to it more than others. The stakeholders would be the general public who interact with technology on a daily basis. Whereas, the community of practice in this case would be more geared towards developers and creators. While trying to test with the audience I've noticed that I've gotten only a majority white or asian group pf people to test it out. I need to get a much wider diverse set of people involved. The core experience of my project is the realization of what's going on as your going through it and realizing that you can't stop it.
+        </p>
+        <!-- End Audience & Experience -->
 
-            <h3 class="sub_title">User Testing</h3>
-            <p>During the Thesis Popup show I was able to get a lot of feedback from various testers. The main problem I was encountering was that the instructions weren't clear enough. Which often caused the message to get lost through the process. Also, I was told frequently to push it further and make the bias more subtle and not so much in your face. It took away from the purpose and the National Anthem along with the Pledge made it seem like too much of a joke for some users. I have to find the right balance of satire to add to the project.
-                <br/>
-                <br/>
-                <img src="{{ site.baseurl }}/images/sal/test1.jpg" class="half_left" />
-                <img src="{{ site.baseurl }}/images/sal/test2.jpg" class="half_right" />
-                <br/>
-                <br/>
-                <img src="{{ site.baseurl }}/images/sal/test3.jpg" class="half_left" />
-                <img src="{{ site.baseurl }}/images/sal/test4.jpg" class="half_right" />
-                <br/>
-                <br/>
-            By making the process extremely bias I was able to have the users experience and feel how it feels to be ruled out by a machine but the approach didn't allow them to feel it the right way. The directness of the bias made it not as impactful. Moving forward I plan on implementing this in a far more subtle and realistic manner.
-            </p>
+        <!-- Prototype -->
+        <h3 class="sub_title">Prototype</h3>
+        <h5 class="resume_h5">Prototype 1: Goddard OS</h5>
+        <p>Initially my form only existed as a piece of software and that was how I wanted it to be. I was going to create an OS that could be operated through gestures and voice. This is where I first began flirting with machine learning and biased data. I was exploring what a computer would be like if it behaved like its user.
+        <br/>
+        <br/>
+        <img src="{{ site.baseurl }}/images/goddard/goddard_os.png" />
+        <br/>
+        <br/>
+        I was given feedback about how it could be more aggressive and really take on the negative side of people and their behaviors. I liked the ideas and tied the thread to the idea of biased data in machinery.</p>
 
-        </div>
+        <h5 class="resume_h5">Prototype 2: Super American License</h5>
+        <p>About midway through the semester I pivoted and went in another direction. With the concentration now on bias data I wanted to build something that could show that. SAL (Super American License) does this by putting the user through an application process and running the profiles through biased datasets as they're going through it. The end result shows wether the user passed or failed the application, given the biased data set, and if so why. It gets printed out on a piece of paper. I initially wanted to go with a booth as the form. To replicate the voting process that is so pivotal in America. (See photos by Santi in <a href="{{ site.baseurl }}/report.pdf" target="_blank" class="doc_link">Community of Practice Report</a> )
+        <br/>
+        <br/>
+        <img src="{{ site.baseurl }}/images/sal/booth_sketch.png" class="half_left" />
+        <img src="{{ site.baseurl }}/images/sal/table_sketch.png" class="half_right" />
+        <br/>
+        <br/>
+            In order to make sure the user experiences some biases I added a single if/else statement to the code to determine the outcome from the beginning. When the user takes their picture SAL will analyze them and determine their race. If they're identified as white they automatically pass. Also, during the pledge of allegiance, SAL takes a photo of the user and if they have their hand over their chest they gain extra points. This was just for the sake of the prototype, in the future iteration the final outcome will be based on various other factors as well.
+            <br/>
+            <br/>
+            <video width="100%" autoplay loop>
+                <source src="{{ site.baseurl }}/images/sal/sal_demo.mp4" type="video/mp4">
+                <source src="{{ site.baseurl }}/images/sal/sal_demo.ogg" type="video/ogg">
+                Your browser does not support HTML5 video.
+            </video>
+        </p>
+
+        <h3 class="sub_title">User Testing</h3>
+        <p>During the Thesis Popup show I was able to get a lot of feedback from various testers. The main problem I was encountering was that the instructions weren't clear enough. Which often caused the message to get lost through the process. Also, I was told frequently to push it further and make the bias more subtle and not so much in your face. It took away from the purpose and the National Anthem along with the Pledge made it seem like too much of a joke for some users. I have to find the right balance of satire to add to the project.
+        <br/>
+        <br/>
+        <img src="{{ site.baseurl }}/images/sal/test1.jpg" class="half_left" />
+        <img src="{{ site.baseurl }}/images/sal/test2.jpg" class="half_right" />
+        <br/>
+        <br/>
+        <img src="{{ site.baseurl }}/images/sal/test3.jpg" class="half_left" />
+        <img src="{{ site.baseurl }}/images/sal/test4.jpg" class="half_right" />
+        <br/>
+        <br/>
+        By making the process extremely bias I was able to have the users experience and feel how it feels to be ruled out by a machine but the approach didn't allow them to feel it the right way. The directness of the bias made it not as impactful. Moving forward I plan on implementing this in a far more subtle and realistic manner.
+        </p>
+        <br/>
+        <br/>
+
+
+        <!-- End Prototype -->
+
 
     </div>

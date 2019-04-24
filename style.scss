@@ -494,10 +494,14 @@ video {
 /* GLITCH END */
 
 .masthead {
-  padding: 20px 0 10px 0;
-  width: 90%;
-  background-color: #fff;
-  z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    left: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 16px;
 
   @include mobile {
     text-align: center;
@@ -1007,8 +1011,13 @@ body.dark {
     .masthead {
         background-color: #1E2227;
         transition: all 0.10s ease-out;
-        padding: 20px 0px 25px 0px;
+        width: 100%;
         z-index: 1;
+        left: 0;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 20px;
+        padding-bottom: 16px;
     }
     .resume_date {
         color: $light-color;

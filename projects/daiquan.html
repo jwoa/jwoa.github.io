@@ -1,0 +1,147 @@
+---
+layout: home
+---
+
+    <div id="projects">
+
+        <img src="{{ site.baseurl }}/images/daiquan/daiquan_banner.png" alt="DAIQUAN" class="banner" />
+
+        <h2 class="project_title">DAIQUAN</h2>
+        <li class="status in-progress">(made with electron, nodejs, html, scss, ml5, face++, azure, rekognition, and watson)</li>
+        <br/>
+
+
+        <div class="project_section">
+            <h3>Concept & Domains</h3>
+            <p>
+                What does it feel like when we are profiled and discriminated against by machines?
+                <br/>
+                <br/>
+                DAIQUAN is an AI powered kiosk that takes the users personal information and tries
+                to make their travel experience safer by screening for possible threats or harassment
+                by local officials. It uses biased data for good.
+            </p>
+
+            <span class="resume_desc">
+                <ul>
+                    <li>Human-Computer Interaction</li>
+                    <li>Biased Data</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </span>
+
+            <p>
+                For this project I focused on some of the more popular API's that are currently available and
+                used for facial recognition. These include Amazon's Rekognition, Face++, Microsoft's Azure, and
+                IBM's Watson. The data that's extracted from each of these API's is then evaluated and compiled
+                by DAIQUAN and used to rank the user.
+            </p>
+        </div>
+
+        <div class="project_section">
+            <h3>Form Focus</h3>
+            <br/>
+            <br/>
+            <img src="{{ site.baseurl }}/images/daiquan/scatter.png" />
+            <br/>
+            <br/>
+                <p>
+                    The form was not hard for me to come up with. I knew from the beginning that I wanted to
+                    build something that related to transportation and data. Different places treat people differently
+                    based on the culture of that environment and how people are generally profiled. The idea for a kiosk
+                    came from the ticket machines that you see all over NYC in various train stations and bus ports.
+                <br/>
+                <br/>
+                    The sketches above show a wide range of some of the ideas I had initially gone through. This was when
+                    I was considering the input factor above everything else. The way the user interacts with the application
+                    was vital as it spoke to how the AI and the user interacted. The first form of the application required
+                    the user to submit social media information as part of the classification process but this raised some problems.
+                    Collecting the data from the accounts proved to be a bit problematic as it eleminated all those who didn't have
+                    a social media presence.
+                </p>
+                <br/>
+                    <img src="{{ site.baseurl }}/images/daiquan/old_prototype.png" />
+                <br/>
+                <br/>
+                <p>
+                    Above is a simple mockup of what the initial interface looked like. I wanted the project to also take in bio data
+                    and use that as part of the evaluation. This idea came to me when I was traveling and saw the Clear Kiosks all over
+                    the secuirty portion of the airport. Here was a company that was using biometric information and data to process people
+                    and grant them/deny them access through the airport. My inital form factor was going to be a replicate of the Clear kiosk
+                    but I thought it best to change course and add my own flair to the project.
+                </p>
+
+        </div>
+
+        <div class="project_section">
+
+            <h3 class="sub_title">Demo + System Flow</h3>
+            <br/>
+
+                <video width="100%">
+                    <source src="{{ site.baseurl }}/images/daiquan/demo.mp4" type="video/mp4">
+                    <source src="{{ site.baseurl }}/images/daiquan/demo.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.
+                </video>
+            <br/>
+            <br/>
+            <p>
+                The video above is an example of DAIQUAN in action. The video shows the application from the front-end perspective
+                of the user and what they would experience. The user begins the process by entering their name and then pressing begin,
+                after that DAIQUAN does the rest of the work. It snaps a photo of the user and then runs that image through the various
+                API's that it's connected to. After that it builds a profile of the user and then asks them to confirm some information
+                before moving forward. Once the user cofirms or denys the application then prepares the results of how they will be profiled
+                and loads up ads that are targeted to the user. Based on just the visual information that it was able to collect.
+                <br/>
+                <br/>
+                <img src="{{ site.baseurl }}/images/daiquan/systemflow.png" />
+                <br/>
+                <br/>
+                As seen in the chart above the application has just a few functions but each one works towards building the complete profile.
+                The most important one is the function that builds the profile. It takes various things into account such as what the person is wearing,
+                their gender, race, age, and even if they are wearing lipstick or have a beard. All of this is then compiled into a profile and then
+                based on the final output it is compared with the crime statistics of NY giving the user a sense of how they'd be treated in NY.
+                <img src="{{ site.baseurl }}/images/daiquan/data.png" />
+                The profile is stored as a JSON file and DAIQUAN reads this file and generates a reciept for the user with all the inforation that was collected
+                as well as wether or not they are flagged as a safety threat. The user can scan the barcode on the bottom of the reciept to learn more about the
+                project.
+            </p>
+
+        </div>
+
+        <div class="project_section">
+
+            <h3 class="sub_title">Branding for this Century</h3>
+            <p>
+                So I'm building an application that uses AI and data to warn people about certain exposure and harrasment that they may recieve,
+                how would this be branded? Will it have a serious tone or be more friendly? What generation is it geared towards? As I sat and
+                thought about this on the train I came across a realization. A lot of the companies that I was seeing advertisements for had a similar
+                approach as far as design and branding goes. It was as if they all shared the same agency. So I modeled the branding for DAIQUAN to look
+                somewhat similar to theirs.
+                <img src="{{ site.baseurl }}/images/daiquan/web_branding.png" />
+                Now that I had the general look down I started to think about the culture of these places and how some of them just may be trying too hard
+                to fit in or be inclusive. You see it all the time online, companies are constantly being "cancelled" for their neglegent approach to advertising
+                campaigns that often end up being offensive in one way ot another to a particular group of people.
+                <br/>
+                <br/>
+                <img src="{{ site.baseurl }}/images/daiquan/stereotypes.png" />
+                <br/>
+                In order to replicate that pattern I programmed the loading/advertisement page to show specific content based on what the user was profiled as.
+                These stereotypes come from my own personal experience as well as speaking with people from different backgrounds and ethnicities who told me
+                how they often get misclassified and judged by people. So what DAIQUAN is trying to do is serve the user an ad that they might like based on the
+                steroetypical data DAIQUAN has about this user.
+            </p>
+
+        </div>
+
+        <div class="project_section">
+
+            <h3 class="sub_title">Next Steps</h3>
+            <p>
+                DAIQUAN is currently being developed and will be on display at the MFA Design & Technology Thesis Show from May 14th - May 17th. Information about
+                about the event can be found <a href="http://mfadt.parsons.edu" target="_blank">here.</a>
+            </p>
+
+        </div>
+
+    </div>
